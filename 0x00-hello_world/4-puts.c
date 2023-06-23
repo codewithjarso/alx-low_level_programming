@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * program that prints using put instead of print f
  *return:0 if success
  */
