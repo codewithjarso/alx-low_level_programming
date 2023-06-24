@@ -2,7 +2,7 @@
 /**
  * main - prints a statement to the screen using printf
  * return (0) - if it is a sucess
- /
+ */
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,");
