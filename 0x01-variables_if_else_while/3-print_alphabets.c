@@ -11,7 +11,7 @@ int main(void)
 
 	while (ch <= 'Z')
 	{
-		ch2 = tolower(ch);
+		char ch2 = tolower(ch);
 		putchar(ch2);
 		putchar(ch);
 		ch++;
