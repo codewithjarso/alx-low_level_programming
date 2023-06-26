@@ -12,7 +12,8 @@ int main(void)
 	while (ch <= 'z')
 	{
 		putchar(ch);
-		putchar(toupper(ch));
+		ch = toupper(ch);
+		putchar(ch);
 		ch++;
 	}
 	putchar('\n');
