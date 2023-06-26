@@ -7,12 +7,12 @@
 
 int main(void)
 {
-	char ch = 'a';
+	char ch = 'A';
 
-	while (ch <= 'z')
+	while (ch <= 'Z')
 	{
-		putchar(ch);
-		ch = toupper(ch);
+		ch2 = tolower(ch);
+		putchar(ch2);
 		putchar(ch);
 		ch++;
 	}
