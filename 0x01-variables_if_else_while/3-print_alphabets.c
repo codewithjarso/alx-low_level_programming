@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	for (int x = 'A'; x <= 'Z'; x++)
+	char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	for (int x = 0; x <= 52; x++)
 	{
-		putchar(tolower(x));
-		putchar(x);
+		putchar(alp[i]);
 	}
 	putchar('\n');
 	return (0);
