@@ -1,10 +1,9 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - updates the value of a pointer
  * Return: Always 0
  */
-int main(void)
+void reset_to_98(int *n)
 {
-	int *p;
-	*p = 98;
+	*n = 98;
 }
