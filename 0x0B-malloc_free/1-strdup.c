@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 /**
  * _strdup - duplicate to new memory location
  * @str:initial value
@@ -8,17 +9,13 @@
 char *_strdup(char *str)
 {
 	int i = 0;
-	int r = 0;
 	char *ptr;
 
 	if (str == NULL)
 		return (NULL);
-	while (str[i] != '\0')
-		i++;
-	ptr = (char *)malloc(sizeof(char) * (i + 1));
+        ptr = (char *)malloc(sizeof(char) * (strlen(str)+1));
 	if (ptr == NULL)
 		return (NULL);
-	for (r = 0; str[r]; r++)
-		ptr[r] = str[r];
+	strcpy(ptr, str);
 	return (ptr);
 }
