@@ -2,7 +2,7 @@
 <h1 align="center">Hi 👋, I'm Stephen Jarso <span><img align="center" alt="coding" width="70" src="https://media.tenor.com/MEf5_1u_loEAAAAj/develop-design.gif"/></span></h1>
 <h3 align="center">A passionate Software Engineer from  Kenya</h3>
 
-👋 connect with me (_jasonsteves)[https://twitter.com/_jasonsteves]
+👋 connect with me [jasonsteves](https://twitter.com/_jasonsteves)
 
 # preprocessors
 Project done during Full Stack Software Engineering studies at ALX Africa Software development. It aims to learn about how to use directives,constants and header files functions in C language.
