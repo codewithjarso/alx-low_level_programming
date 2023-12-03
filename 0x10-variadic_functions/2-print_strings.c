@@ -9,7 +9,8 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	int i, result;
+	int i;
+	char *result;
 	va_list names;
 
 	va_start(names, n);
@@ -17,9 +18,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		result = va_arg(names, char *);
-		printf("%s", result);
-		if (i < n - 1 && separator != NULL && result != NULL)
-			printf("%s", separator);
+		if (result != NULL)
+		{
+			printf("%s", result);
+			if (i < n - 1 && separator != NULL)
+				printf("%s", separator);
+		}
 		else
 			printf("nil");
 	}
