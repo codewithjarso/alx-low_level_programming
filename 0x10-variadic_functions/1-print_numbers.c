@@ -9,18 +9,18 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	unsigned int i;
+	unsigned int i, result;
 	va_list data;
 
 	va_start(data, n);
-
-	if (separator != NULL)
+	for (i = 0; i < n; i++)
 	{
-		for (i = 0; i < n - 1; i++)
-		{
-			printf("%d%s", va_arg(data, int), separator);
-		}
-		prinf("%d", va_arg(data, int));
+		/*store our numbers in result then print it*/
+		result = va_arg(data, int);
+		printf("%d", result);
+		/*if this is not the last integer print the separator*/
+	if (i < n - 1 && separator != NULL)
+		printf("%s", separator);
 	}
 	va_end(data);
 	printf("\n");
