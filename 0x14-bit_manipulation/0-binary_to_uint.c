@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * binary_to _int - function to coonvert binary to decimal
+ * binary_to_uint - function to coonvert binary to decimal
  * @b:pointer to the binary number
  * Return: 0 if null and the decimal number if not
  */
