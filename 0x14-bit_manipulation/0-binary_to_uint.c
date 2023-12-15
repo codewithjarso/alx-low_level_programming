@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * binary_to _int - function to coonvert binary to decimal
  * @b:pointer to the binary number
