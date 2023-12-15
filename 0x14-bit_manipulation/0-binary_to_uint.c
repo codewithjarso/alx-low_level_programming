@@ -8,21 +8,37 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-   int decimal = 0;
-   int length = strlen(b);
+unsigned int result = 0;
+int weight = 1;
+const char *p = b;
 
-   if (b == NULL)
-      return (0);
-    for (int i = 0; i < length; i++) {
-        if (b[i] == '1') {
-            decimal = decimal * 2 + 1;
-        } else if (b[i] == '0') {
-            decimal *= 2;
-        } else
-        {
-            return (0);
-        }
-    }
+/* check for NULL pointer*/
+if (b == NULL)
+return (0);
 
-    return (decimal);
+/*lopping until the end of the string*/
+while (*p != '\0')
+{
+p++;
+}
+/*move back on position to be on the last character not '\0'*/
+p--;
+/* moving from the end of the string to the beginning*/
+while (p >= b)
+{
+/*check for valid characters 0 and 1*/
+if (*p == '1')
+{
+result += weight;
+}
+
+else if (*p != '0')
+{
+return (0);
+}
+/*Update weight and move pointer back one character*/
+weight *= 2;
+p--;
+}
+return (result);
 }
