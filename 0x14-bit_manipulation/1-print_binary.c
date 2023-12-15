@@ -10,7 +10,6 @@ void print_binary(unsigned long int n)
 
    while (n != NULL)
    {
-      result = n & i;
 
       if (n & 1)
       {
